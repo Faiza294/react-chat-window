@@ -646,3 +646,136 @@
 .sc-popup-window--search::placeholder {
   color: #C1C7CD;
 }
+
+.sc-chat-window {
+  height: calc(100% - 180px);
+}
+
+.sc-message--content.sent .sc-message--avatar {
+  /*display: block;*/
+}
+
+.sc-message--avatar {
+  min-width: 35px;
+  min-height: 35px;
+}
+
+.sc-message--content.sent .sc-message--text {
+  border-radius: 15px;
+  /*padding: 12px 20px;*/
+  padding: 12px 9px 5px 20px;
+}
+
+.sc-message--time {
+  /*font-size: 20px;*/
+  color: #DCDCDC;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 8px 2px 8px;
+  margin-top: 2px;
+  float: right;
+}
+
+.talk-text {
+  padding: 8px 8px 2px 8px;
+  text-align: left;
+  line-height: 1.5em;
+  margin-bottom: 2px;
+}
+
+.talk-text p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  /*margin-bottom: 2px;*/
+  color: white;
+}
+
+.talk-bubble {
+  /*margin: 40px;*/
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: #4e8cff;
+}
+
+.round {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.tri-right.border.right-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -40px;
+  top: 30px;
+  bottom: auto;
+  border: 20px solid;
+  border-color: #ECEFF1 transparent transparent #ECEFF1;
+}
+
+.tri-right.right-in:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -12px;
+  top: 28px;
+  bottom: auto;
+  border: 8px solid;
+  border-color: #ECEFF1 transparent transparent #ECEFF1;
+}
+
+.tri-right.right-in {
+  background-color: #ECEFF1;
+}
+
+.tri-right.right-in p {
+  color: #0d0925;
+}
+
+.tri-right.right-in small {
+  color: #909090;
+}
+
+.tri-right.border.left-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -40px;
+  right: auto;
+  top: 30px;
+  bottom: auto;
+  border: 20px solid;
+  border-color: #666 #666 transparent transparent;
+}
+
+.tri-right.left-in {
+  background-color: #73ABFF;
+  color: white;
+}
+
+.tri-right.left-in small {
+  color: white;
+}
+
+.tri-right.left-in:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -12px;
+  right: auto;
+  top: 28px;
+  bottom: auto;
+  border: 8px solid;
+  border-color: #73ABFF #73ABFF transparent transparent;
+}
