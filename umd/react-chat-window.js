@@ -953,7 +953,7 @@ var UserInput = function (_Component) {
   };
 
   UserInput.prototype._showFilePicker = function _showFilePicker() {
-    this._fileUploadButton.click();
+    this.props.fileInputRef ? this.props.fileInputRef.click() : this._fileUploadButton.click();
   };
 
   UserInput.prototype._submitText = function _submitText(event) {

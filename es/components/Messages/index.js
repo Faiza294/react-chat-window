@@ -40,9 +40,9 @@ var Message = function (_Component) {
       React.createElement(
         'div',
         { className: contentClassList.join(" ") },
-        React.createElement('div', { className: 'sc-message--avatar avatar-tooltip', style: {
+        React.createElement('div', { className: 'sc-message--avatar', style: {
             backgroundImage: 'url(' + this.props.message.imageUrl + ')'
-          } }, React.createElement('span', { className: 'tooltiptext' }, this.props.message.userName) ),
+          } }),
         this._renderMessageOfType(this.props.message.type)
       )
     );

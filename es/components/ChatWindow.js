@@ -45,7 +45,8 @@ var ChatWindow = function (_Component) {
       React.createElement(UserInput, {
         onSubmit: this.onUserInputSubmit.bind(this),
         onFilesSelected: this.onFilesSelected.bind(this),
-        showEmoji: this.props.showEmoji
+        showEmoji: this.props.showEmoji,
+        fileInputRef: this.props.fileInputRef
       })
     );
   };

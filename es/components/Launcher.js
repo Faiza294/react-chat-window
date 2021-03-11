@@ -73,7 +73,8 @@ var Launcher = function (_Component) {
         agentProfile: this.props.agentProfile,
         isOpen: isOpen,
         onClose: this.handleClick.bind(this),
-        showEmoji: this.props.showEmoji
+        showEmoji: this.props.showEmoji,
+        fileInputRef: this.props.fileInputRef
       })
     );
   };
