@@ -93,7 +93,7 @@ var UserInput = function (_Component) {
   };
 
   UserInput.prototype._showFilePicker = function _showFilePicker() {
-    this._fileUploadButton.click();
+    this.props.fileInputRef ? this.props.fileInputRef.click() : this._fileUploadButton.click();
   };
 
   UserInput.prototype._submitText = function _submitText(event) {
@@ -134,7 +134,7 @@ var UserInput = function (_Component) {
         name: 'files[]',
         multiple: true,
         ref: function ref(e) {
-          _this2._fileUploadButton = e;
+          e !== null && (_this2._fileUploadButton = e) ;
         },
         onChange: this._onFilesSelected.bind(this)
       })
