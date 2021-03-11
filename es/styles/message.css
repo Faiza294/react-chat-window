@@ -219,3 +219,39 @@
   border: 8px solid;
   border-color: #73ABFF #73ABFF transparent transparent;
 }
+
+.avatar-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-tooltip .tooltiptext {
+  visibility: hidden;
+  width: 110px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 999999999999999999999999999999999 !important;
+  bottom: 135%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.avatar-tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 35%;
+
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.avatar-tooltip:hover .tooltiptext {
+  visibility: visible;
+}
