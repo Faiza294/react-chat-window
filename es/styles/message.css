@@ -255,3 +255,7 @@
 .avatar-tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.p-wrapper{
+  display: inline-flex;
+}
