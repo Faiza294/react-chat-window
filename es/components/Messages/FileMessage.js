@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FileIcon from './../icons/FileIcon';
+import moment from 'moment';
 
 var FileMessage = function FileMessage(props) {
     var isImage = /\.(jpeg|jpg|gif|png|JPEG|JPG|GIF|PNG)$/.test(props.data.url);
